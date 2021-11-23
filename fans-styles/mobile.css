@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Quicksand", "Montserrat";
+  font-size: 62.5%;
+}
+header {
+  align-items: center;
+  border-bottom: 1px solid black;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+  min-width: 320px;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  min-width: 320px;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+form {
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5px;
+  min-width: 320px;
+}
+
+form div {
+  height: 80px;
+  margin-bottom: 20px;
+}
+form div label {
+  height: 30%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+form div input {
+  height: 70%;
+}
+
+.input-top-container,
+.input-bottom-container,
+.result-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-middle-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c1,
+#largeSide,
+.c2,
+#shortSide {
+  width: 50%;
+}
+
+.input-middle-container .c1 {
+  order: 1;
+}
+.input-middle-container #largeSide {
+  order: 3;
+}
+
+.input-middle-container .c2 {
+  order: 2;
+}
+.input-middle-container #shortSide {
+  order: 4;
+}
