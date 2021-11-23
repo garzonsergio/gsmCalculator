@@ -7,16 +7,24 @@
 html {
   font-family: "Quicksand", "Montserrat";
   font-size: 62.5%;
+
+  --orange-yellow-crayola: #f4d06fff;
+  --dark-orange: #ff8811ff;
+  --dark-orange-transparent: rgba(255, 136, 17, 0.5);
+  --middle-blue-green: #9dd9d2ff;
+  --floral-white: #fff8f0ff;
+  --space-cadet: #392f5aff;
+  --black: black;
 }
 header {
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black);
   display: flex;
   height: 40px;
   justify-content: center;
   margin-bottom: 10px;
-  width: 100%;
   min-width: 320px;
+  width: 100%;
 }
 
 header h1 {
@@ -24,10 +32,20 @@ header h1 {
   text-align: center;
 }
 
+.image-container {
+  display: flex;
+  align-items: left;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 280px;
+}
 h2 {
   font-size: 1.6rem;
-  text-align: center;
   min-width: 320px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .main-container {
@@ -37,11 +55,12 @@ h2 {
 }
 
 form {
-  background-color: lightcoral;
+  background: var(--dark-orange-transparent);
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  padding: 20px 5px;
-  min-width: 320px;
+  max-width: 320px;
+  padding: 20px 12px;
 }
 
 form div {
@@ -49,12 +68,16 @@ form div {
   margin-bottom: 20px;
 }
 form div label {
-  height: 30%;
   font-size: 1.2rem;
   font-weight: 600;
+  height: 30%;
 }
 form div input {
   height: 70%;
+  text-align: center;
+  font-size: 2.4rem;
+  border-radius: 8px;
+  border: none;
 }
 
 .input-top-container,
@@ -67,13 +90,14 @@ form div input {
 .input-middle-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .c1,
 #largeSide,
 .c2,
 #shortSide {
-  width: 50%;
+  width: 49%;
 }
 
 .input-middle-container .c1 {
