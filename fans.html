@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +16,9 @@
 <body>
     <header>
         <h1>Gramaje de Fans</h1>
+        <div class="back-container">
+            <a onclick="location.href ='./index.html'">Menú</a>
+        </div>
     </header>
     <section class="main-container">
         <div class="image-container">
@@ -28,25 +31,25 @@
         <form>
             <div class="input-top-container">
                 <label for="weight">Peso (gramos)</label>
-                <input name="weight" id="weight" type="number" placeholder="3.5" oninput="findTheGsm()">  
+                <input name="weight" id="weight" type="number" placeholder="0" oninput="findTheGsm()">  
             </div>
             
             <div class="input-middle-container">
                 <label class="c1" for="largeSide">Lado 1 (mm)</label>
-                <input name="largeSide" id="largeSide" type="number" placeholder="200" oninput="findTheGsm()"/>
+                <input name="largeSide" id="largeSide" type="number" placeholder="0" oninput="findTheGsm()"/>
                         
                 <label class="c2" for="shortSide">Lado 2 (mm)</label>
-                <input name="shortSide" id="shortSide"  type="number" placeholder="180" oninput="findTheGsm()"/>
+                <input name="shortSide" id="shortSide"  type="number" placeholder="0" oninput="findTheGsm()"/>
             </div>
 
             <div class="input-bottom-container">
                 <label for="height">Altura (mm)</label>
-                <input name="height" id="height" type="number" placeholder="100" oninput="findTheGsm()"/>
+                <input name="height" id="height" type="number" placeholder="0" oninput="findTheGsm()"/>
             </div>
 
             <div class="result-container">
                 <label for="gsmResult">Gramaje (gsm)</label>
-                <input name="resultGsm" id="gsmResult" type="number" placeholder="" disabled />
+                <input name="resultGsm" id="gsmResult" type="number" placeholder="0" disabled />
             </div>
             
 

@@ -35,7 +35,7 @@ function findTheGsm() {
     let fanGsm = parseInt(gsm(weight, fanarea));
     
     if (isNaN(fanGsm) || fanGsm === 0){
-        gsmResult.value = "";
+        gsmResult.value = "Ingrese las dimensiones y el peso";
     } else{
         gsmResult.value = fanGsm;
     }
