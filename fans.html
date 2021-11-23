@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fans-styles/mobile.css">
+    <link rel="stylesheet" href="./fans-styles/tablet.css" media="screen and (min-width:600px)">
+    <link rel="stylesheet" href="./fans-styles/desktop.css" media="screen and (min-width:1024px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Gramaje de Fans de Papel</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Gramaje de Fans</h1>
+    </header>
+    <section class="main-container">
+        <div class="image-container">
+            <img src="#" alt="fan layout">
+        </div>  
+        <h2>
+            Calcula el gramaje del fan de papel
+        </h2>                 
+        
+        <form>
+            <div class="input-top-container">
+                <label for="weight">Peso (gramos)</label>
+                <input name="weight" id="weight" type="number" oninput="findTheGsm()">  
+            </div>
+            
+            <div class="input-middle-container">
+                <label class="c1" for="largeSide">Lado 1 (mm)</label>
+                <input name="largeSide" id="largeSide" type="number" oninput="findTheGsm()"/>
+                        
+                <label class="c2" for="shortSide">Lado 2 (mm)</label>
+                <input name="shortSide" id="shortSide"  type="number" oninput="findTheGsm()"/>
+            </div>
+
+            <div class="input-bottom-container">
+                <label for="height">Altura (mm)</label>
+                <input name="height" id="height" type="number" oninput="findTheGsm()"/>
+            </div>
+
+            <div class="result-container">
+                <label for="gsmResult">Gramaje (gsm)</label>
+                <input name="resultGsm" id="gsmResult" type="number" disabled />
+            </div>
+            
+
+           <p id="resultGsm"></p>
+        </form>
+    </section>
+    <script src="fans.js"></script>
+</body>
+</html>
