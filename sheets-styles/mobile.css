@@ -109,33 +109,6 @@ form div input {
   flex-direction: column;
 }
 
-.input-middle-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.c1,
-#largeSide,
-.c2,
-#shortSide {
-  width: 49%;
-}
-
-.input-middle-container .c1 {
-  order: 1;
-}
-.input-middle-container #largeSide {
-  order: 3;
-}
-
-.input-middle-container .c2 {
-  order: 2;
-}
-.input-middle-container #shortSide {
-  order: 4;
-}
-
 .result-container input {
   background-color: var(--blue);
   color: var(--floral-white);

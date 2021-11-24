@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Láminas por Tonelada de Papel</title>
+    <link rel="stylesheet" href="./fans-styles/mobile.css">
+    <link rel="stylesheet" href="./fans-styles/tablet.css" media="screen and (min-width:600px)">
+    <link rel="stylesheet" href="./fans-styles/desktop.css" media="screen and (min-width:1024px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Láminas por Tonelada</title>
     
 </head>
 <body>
-    
+    <header>
+        <h1>Láminas por Tonelada</h1>
+        <div class="back-container">
+            <a onclick="location.href ='./index.html'">Menú</a>
+        </div>
+    </header>
+    <section class="main-container">
+        <div class="image-container">
+            <!-- <img src="https://api.openasapp.net/v1/api/EntityImageStorage/AppStorage/6ba00120-53ef-419f-91c9-ae7e2b1439ee/public/field-bL2fas9A.png?v=VvvzoGzu" alt="fan layout"> -->
+        </div>  
+        <h2>
+            Calcula las láminas por Tonelada
+        </h2>                 
+        
+        <form>
+            <div class="input-top-container">
+                <label for="weight">Peso (Ton)</label>
+                <input name="weight" id="weight" type="number" placeholder="0" oninput="findNumberOfSheets()">  
+            </div>
+
+            <div class="input-top-container">
+                <label for="gsm">Gramaje (gsm)</label>
+                <input name="gsm" id="gsm" type="number" placeholder="0" oninput="findNumberOfSheets()">  
+            </div>
+            
+            <div class="input-middle-container">
+                <label class="c1" for="largeSide">Lado 1 (mm)</label>
+                <input name="largeSide" id="largeSide" type="number" placeholder="0" oninput="findNumberOfSheets()"/>
+                        
+                <label class="c2" for="shortSide">Lado 2 (mm)</label>
+                <input name="shortSide" id="shortSide"  type="number" placeholder="0" oninput="findNumberOfSheets()"/>
+            </div>
+
+            <div class="result-container">
+                <label for="resultSheets">N° Láminas</label>
+                <input name="resultSheets" id="resultSheets" type="number" placeholder="0" disabled />
+            </div>
+            
+
+           <p id="resultSheets"></p>
+        </form>
+    </section>
+    <script src="sheetsPerTon.js"></script>
 </body>
 </html>

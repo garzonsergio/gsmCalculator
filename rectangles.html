@@ -1,13 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gramaje de hojas de Papel</title>
+    <link rel="stylesheet" href="./rectangles-styles/mobile.css">
+    <!-- <link rel="stylesheet" href="./rectangle-styles/tablet.css" media="screen and (min-width:600px)">
+    <link rel="stylesheet" href="./rectangle-styles/desktop.css" media="screen and (min-width:1024px)"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Gramaje de Rectangulos de Papel</title>
     
 </head>
 <body>
-    
+    <header>
+        <h1>Gramaje de Hojas</h1>
+        <div class="back-container">
+            <a onclick="location.href ='./index.html'">Menú</a>
+        </div>
+    </header>
+    <section class="main-container">
+        <div class="image-container">
+            <img src="https://api.openasapp.net/v1/api/EntityImageStorage/AppStorage/6ba00120-53ef-419f-91c9-ae7e2b1439ee/public/field-6FSivfQo.png?v=7po83Nih" alt="rectangle with measurements">
+        </div>  
+        <h2>
+            Calcula el gramaje de la hoja de papel
+        </h2>                 
+        
+        <form>
+            <div class="input-top-container">
+                <label for="weight">Peso (gramos)</label>
+                <input name="weight" id="weight" type="number" placeholder="0" oninput="findRectangleGSM()">  
+            </div>
+            
+            <div class="input-middle-container">
+                <label class="c1" for="side1">Lado 1 (mm)</label>
+                <input name="side1" id="side1" type="number" placeholder="0" oninput="findRectangleGSM()"/>
+                        
+                <label class="c2" for="side2">Lado 2 (mm)</label>
+                <input name="side2" id="side2"  type="number" placeholder="0" oninput="findRectangleGSM()"/>
+            </div>
+
+            <div class="result-container">
+                <label for="gsmResult">Gramaje (gsm)</label>
+                <input name="resultGsm" id="gsmResult" type="number" placeholder="0" disabled />
+            </div>
+            
+
+           <p id="resultGsm"></p>
+        </form>
+    </section>
+    <script src="rectangles.js"></script>
 </body>
 </html>

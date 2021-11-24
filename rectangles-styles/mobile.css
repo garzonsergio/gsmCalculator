@@ -116,23 +116,23 @@ form div input {
 }
 
 .c1,
-#largeSide,
+#side1,
 .c2,
-#shortSide {
+#side2 {
   width: 49%;
 }
 
 .input-middle-container .c1 {
   order: 1;
 }
-.input-middle-container #largeSide {
+.input-middle-container #side1 {
   order: 3;
 }
 
 .input-middle-container .c2 {
   order: 2;
 }
-.input-middle-container #shortSide {
+.input-middle-container #side2 {
   order: 4;
 }
 

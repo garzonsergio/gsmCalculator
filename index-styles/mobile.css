@@ -7,6 +7,15 @@
 html {
   font-size: 62.5%;
   font-family: "Quicksand", "Montserrat";
+
+  --orange-yellow-crayola: #f4d06fff;
+  --dark-orange: #ff8811ff;
+  --dark-orange-transparent: rgba(255, 136, 17, 0.5);
+  --middle-blue-green: rgba(58, 217, 242, 0.8);
+  --floral-white: #fff8f0ff;
+  --space-cadet: #392f5aff;
+  --black: black;
+  --blue: rgb(9, 103, 155);
 }
 
 header {
@@ -15,13 +24,14 @@ header {
 }
 header div {
   align-items: center;
+  background-color: var(--black);
+  color: var(--floral-white);
   display: flex;
-  justify-content: space-between;
-  padding: 10px 5px;
+  justify-content: start;
   min-height: 40px;
-  width: 100%;
+  padding: 10px 12px;
   position: fixed;
-  background-color: white;
+  width: 100%;
 }
 
 header div h1 {
@@ -33,7 +43,7 @@ header div img {
 }
 
 main {
-  /* column-gap: 10px; */
+  margin-top: 50px;
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
@@ -42,13 +52,14 @@ main {
 }
 
 .container {
+  align-items: center;
   border-radius: 10px;
   border: 0.1px solid rgba(0, 0, 0, 0.2);
-  height: 145px;
-  width: 145px;
+  cursor: pointer;
   display: flex;
+  height: 145px;
   justify-content: center;
-  align-items: center;
+  width: 145px;
 }
 
 .container:hover {
